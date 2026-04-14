@@ -82,7 +82,7 @@ pip install -r requirements.txt
 python server.py
 ```
 
-Then open the application at `http://localhost:5000`.
+Then open the application at `http://localhost:9099`.
 
 ## Deploy on Nife.io
 
@@ -105,8 +105,8 @@ Then configure a new application in Nife.io with the following settings.
 | Source | Docker Image |
 | Registry | Docker Hub or another supported registry |
 | Image | `<username>/shudhopenvino:latest` |
-| Internal Port | `8080` |
-| External Port | `80` |
+| Internal Port | `9099` |
+| External Port | `9099` |
 | Suggested Replicas | `1` |
 
 ### Option 2: Deploy from the Git repository
@@ -118,8 +118,8 @@ Deploy the project directly from GitHub.
 | Source | Git Repository |
 | Provider | GitHub |
 | Branch | `main` |
-| Internal Port | `5000` |
-| External Port | `80` |
+| Internal Port | `9099` |
+| External Port | `9099` |
 | Build Mode | Auto-Dockerize with runtime |
 
 ### Option 3: Deploy with `nifectl`
@@ -141,7 +141,7 @@ The following variables are commonly relevant for deployment.
 | Variable | Description | Example |
 | --- | --- | --- |
 | `PYTHON_ENV` | Python execution environment | `production` |
-| `PORT` | Application port | `5000` |
+| `PORT` | Application port | `9099` |
 
 ## Repository Structure
 
@@ -164,7 +164,7 @@ The following variables are commonly relevant for deployment.
 | OpenVINO not installed | Install OpenVINO Toolkit and verify installation |
 | Flask import error | Reinstall Flask with `pip install flask` |
 | Virtual environment issues | Delete venv folder and recreate with `python -m venv venv` |
-| Port `5000` already in use | Stop the conflicting process or change the port |
+| Port `9099` already in use | Stop the conflicting process or change the port |
 | Model inference fails | Verify model files and OpenVINO paths |
 | Deployment fails on Nife.io | Verify ports, environment variables, and build settings |
 | Application is unreachable | Check routing, service exposure, and deployment logs |
