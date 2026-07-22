@@ -183,5 +183,5 @@ This project is licensed under the **MIT License**.
 
 1. [Nife.io](https://nife.io)
 2. [Nife Docs Overview](https://docs.nife.io/overview/)
-3. [Original Repository](https://github.com/nifetency/ShudhOpenVino.git)
+3. [Original Repository](https://github.com/nife-public/ShudhOpenVino.git)
 4. [Nife Quick Start](https://docs.nife.io/Quick-Start)
